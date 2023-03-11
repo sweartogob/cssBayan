@@ -1,0 +1,14 @@
+h1 {
+    font-size: 40px;
+    font-family: Arial;
+    font-weight: 900;
+}
+
+header {
+    border-bottom: 2px solid rgb(227, 231, 231);
+}
+
+body {
+    background-color: rgb(246, 246, 236);
+    margin: 40px 120px 40px 120px;
+}
