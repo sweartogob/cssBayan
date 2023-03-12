@@ -21,7 +21,13 @@ p {
     list-style: none;
 }
 
+.meme_title {
+    display: flex;
+    justify-content: space-between;
+}
+
 li {
+
     border-top: 2px solid rgb(227, 231, 231);
     list-style: none;
 }
@@ -33,7 +39,7 @@ li {
 .list_of_memes a {
     color: rgb(55, 55, 245);
     text-decoration: none;
-    display: block;
+    /*display: block;*/
 }
 
 .list_of_memes a:hover {
