@@ -20,17 +20,34 @@ p {
     font-size: 20px;
 }
 
-main {
+.list_of_memes {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+.memes_img {
     text-align: center;
 }
 
-main a {
+.list_of_memes a {
+    color: rgb(55, 55, 245);
     text-decoration: none;
-    color: blue;
-    transition: all 0.2s ease-out;
+    display: block;
 }
 
-main a:hover {
+.list_of_memes a:hover {
     color: black;
-    
+    transition: all 0.5s ease-out;
+}
+
+.list_of_memes .memes_img {
+    display: none;
+}
+
+.list_of_memes li:hover .memes_img {
+    display: block;
 }
