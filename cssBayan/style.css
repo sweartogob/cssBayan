@@ -12,3 +12,15 @@ body {
     background-color: rgb(246, 246, 236);
     margin: 40px 120px 40px 120px;
 }
+
+p {
+    font-family: Arial;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
