@@ -26,7 +26,14 @@ p {
     justify-content: space-between;
 }
 
+.meme > input[type='radio'] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
 .meme {
+    position: relative;
     border-top: 2px solid rgb(227, 231, 231);
     list-style: none;
 }
