@@ -16,7 +16,7 @@ p {
     font-size: 20px;
 }
 
-.list_of_memes {
+.bayan {
     padding: 0;
     list-style: none;
 }
@@ -26,7 +26,7 @@ p {
     justify-content: space-between;
 }
 
-li {
+.meme {
     border-top: 2px solid rgb(227, 231, 231);
     list-style: none;
 }
@@ -35,32 +35,45 @@ li {
     text-align: center;
 }
 
-.list_of_memes a {
+.bayan a {
+    transition: all 0.5s ease-out;
     color: rgb(55, 55, 245);
     text-decoration: none;
 }
 
-.list_of_memes:hover a{
+.bayan:hover a {
     color: black;
 }
 
-.marker_image {
-    display: none;
-}
-
-.list_of_memes:hover .marker_image {
-    display: block;
-}
-
-.list_of_memes a:hover {
+.bayan a:hover {
     color: black;
     transition: all 0.5s ease-out;
 }
 
-.list_of_memes .memes_img {
+.open_marker_image {
     display: none;
 }
 
-.list_of_memes li:hover .memes_img {
+.bayan:hover .open_marker_image {
+    display: block;
+}
+
+.bayan .memes_img {
+    display: none;
+}
+
+.bayan .meme:hover .memes_img {
+    display: block;
+}
+
+.bayan .meme:hover .open_marker_image {
+    display: none;
+}
+
+.close_marker_image {
+    display: none;
+}
+
+.bayan .meme:hover .close_marker_image {
     display: block;
 }
