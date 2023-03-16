@@ -1,86 +1,60 @@
-h1 {
-    font-size: 40px;
-    font-family: Arial;
-    font-weight: 900;
-}
-
 body {
-    background-color: rgb(246, 246, 236);
-    margin: 120px 360px 120px 360px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: rgb(225, 226, 180);
 }
 
-p {
-    text-align: left;
-    font-family: Arial;
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 2.5rem;    
 }
 
-.bayan {
-    padding: 0;
-    list-style: none;
+.accord {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.accord_meme {
+    border-top: 2px solid rgb(55, 94, 47);
+    cursor: pointer;
 }
 
 .meme_title {
     display: flex;
+    padding: 1rem 0rem;
+    align-items: center;
     justify-content: space-between;
+    cursor: pointer;
 }
 
-.meme > input[type='radio'] {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
+.accord_meme > input[type='radio'] {
+    display: none;
 }
 
-.meme {
-    position: relative;
-    border-top: 2px solid rgb(227, 231, 231);
-    list-style: none;
+input[type='radio']:checked ~ .accord_content {
+    max-height: 50%;
+    transition: .5s;
 }
 
-.memes_img {
+.accord_content {
     text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
 }
 
-.bayan a {
-    transition: all 0.5s ease-out;
-    color: rgb(55, 55, 245);
-    text-decoration: none;
+.meme_marker {
+    opacity: 0;
 }
 
-.bayan:hover a {
-    color: black;
+.accord:hover .meme_marker {
+    opacity: 1;
+    transition: .5s;
 }
 
-.bayan a:hover {
-    color: black;
-    transition: all 0.5s ease-out;
-}
-
-.open_marker_image {
-    display: none;
-}
-
-.bayan:hover .open_marker_image {
-    display: block;
-}
-
-.bayan .memes_img {
-    display: none;
-}
-
-.bayan .meme:hover .memes_img {
-    display: block;
-}
-
-.bayan .meme:hover .open_marker_image {
-    display: none;
-}
-
-.close_marker_image {
-    display: none;
-}
-
-.bayan .meme:hover .close_marker_image {
-    display: block;
+.accord_meme:hover .meme_marker {
+    transform: rotate(45deg);
+    transition: .5s;
 }
