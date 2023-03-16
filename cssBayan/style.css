@@ -1,0 +1,83 @@
+body {
+    margin: 0 auto;
+    max-width: 60%;
+    background-color: rgb(225, 226, 180);
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;    
+}
+
+.accord {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.accord_meme {
+    border-top: 2px solid rgb(55, 94, 47);
+    cursor: pointer;
+}
+
+.meme_title {
+    color: rgb(60, 92, 60);
+    display: flex;
+    padding: 1rem 0rem;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+input[type='radio']:checked ~ .meme_title {
+    color: black;
+}
+
+.accord:hover .meme_title {
+    color: black;
+    transition: .5s;
+}
+
+.accord_meme > input[type='radio'] {
+    display: none;
+}
+
+input[type='radio']:checked ~ .accord_content {
+    max-height: 50%;
+    transition: .5s;
+}
+
+.accord_content {
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+    transform: translate(5%);
+}
+
+.accord_meme:hover .accord_content {
+    max-height: 50%;
+}
+
+.accord_meme:active {
+    opacity: 0.7;
+}
+
+.accord_meme:active .meme_title {
+    color: rgb(111, 167, 111);
+}
+
+.meme_marker {
+    opacity: 0;
+}
+
+.accord:hover .meme_marker {
+    opacity: 1;
+    transition: .5s;
+}
+
+.accord_meme:hover .meme_marker {
+    transform: rotate(45deg);
+    transition: .5s;
+}
