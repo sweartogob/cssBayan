@@ -53,6 +53,7 @@ input[type='radio']:checked ~ .accord_content {
     max-height: 0;
     overflow: hidden;
     transition: .5s;
+    transform: translate(5%);
 }
 
 .accord_meme:hover .accord_content {
